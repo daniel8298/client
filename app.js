@@ -227,7 +227,7 @@ BUTTON_PLUS.addEventListener("click", () => {
 });
 
 const dataStorage = async () => {
-  const response = await fetch("http://localhost:8000/products");
+  const response = await fetch("https://server-ypki.onrender.com/products");
   data = await response.json();
   createAllCards(data);
 };
@@ -238,7 +238,7 @@ const deleteProduct = async (product) => {
     params: { id: product.id },
   };
   const response = await fetch(
-    `http://localhost:8000/product/${product.id}`,
+    `https://server-ypki.onrender.com/product/${product.id}`,
     reqOptions
   );
   data = await response.json();
