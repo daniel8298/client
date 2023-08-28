@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h2 class="text">Invertory Managment</h2>
+        <div>
+          <span class="material-icons button-home">home</span>
+          <span class="material-icons" id="button-plus"
+            >add_circle_outline</span
+          >
+        </div>
+      </header>
+
+      <main id="product" class="d_block">
+        <nav>
+          <div id="buttons_nav">
+            <div>
+              <button id="all-products" class="nav">All Products</button>
+              <button id="man" class="nav">Man</button>
+              <button id="women" class="nav">Women</button>
+              <button id="jewelery" class="nav">Jewelery</button>
+              <button id="electronics" class="nav">Electronics</button>
+            </div>
+            <form id="form-search">
+              <input id="text-search" type="search" placeholder="search" />
+              <span id="button-search" class="material-icons">search</span>
+            </form>
+          </div>
+        </nav>
+        <h1>Products</h1>
+        <div id="page"></div>
+      </main>
+
+      <div id="product_page" class="d_none">
+        <div id="div_title">
+          <div class="icons">
+            <span class="material-icons">arrow_back</span>
+            <span id="button_edit_from" class="material-icons">create</span>
+            <span class="material-icons button-home">home</span>
+          </div>
+          <h1>Product Page</h1>
+        </div>
+
+        <div id="div_product">
+          <div id="details_product">
+            <div id="div_img">
+              <img id="details_img" />
+            </div>
+            <div id="div_details">
+              <h3>Title</h3>
+              <p id="details_title"></p>
+              <h3>Description</h3>
+              <p id="details_description"></p>
+              <h3>Category</h3>
+              <p id="details_category"></p>
+              <h3>Price</h3>
+              <p id="details_price"></p>
+              <h3>Quantity</h3>
+              <p id="details_quantity"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="edit_page" class="d_none">
+        <div id="div_title">
+          <div class="icons">
+            <span class="material-icons">arrow_back</span>
+            <span class="material-icons">search</span>
+            <span class="material-icons button-home">home</span>
+          </div>
+          <h1>Edit Page</h1>
+        </div>
+
+        <div id="div_edit_product">
+          <div id="details_edit_product">
+            <form>
+              <h3>Title</h3>
+              <input type="text" class="input_edit" id="edit_title" />
+              <h3>Category</h3>
+              <input type="text" class="input_edit" id="edit_category" />
+              <h3>Price</h3>
+              <input type="text" class="input_edit" id="edit_price" />
+              <h3>image URL</h3>
+              <input type="text" class="input_edit" id="edit_img" />
+              <h3>Quantity</h3>
+              <input type="text" class="input_edit" id="edit_quantity" />
+              <h3>Description</h3>
+              <input type="text" class="input_edit" id="edit_description" />
+              <br />
+              <button id="button_edit">EDIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="add_page" class="d_none">
+        <div id="div_title">
+          <div class="icons">
+            <span class="material-icons">arrow_back</span>
+            <span class="material-icons">search</span>
+            <span class="material-icons button-home">home</span>
+          </div>
+          <h1>Add Page</h1>
+        </div>
+
+        <div id="div_edit_product">
+          <div id="details_edit_product">
+            <form>
+              <h3>Title</h3>
+              <input
+                type="text"
+                class="input_edit"
+                id="edit_title"
+                placeholder="Add Title..."
+              />
+              <h3>Category</h3>
+              <input
+                type="text"
+                class="input_edit"
+                id="edit_category"
+                placeholder="Add Category..."
+              />
+              <h3>Price</h3>
+              <input
+                type="text"
+                class="input_edit"
+                id="edit_price"
+                placeholder="Add Price..."
+              />
+              <h3>image URL</h3>
+              <input
+                type="text"
+                class="input_edit"
+                id="edit_img"
+                placeholder="Add Image URL..."
+              />
+              <h3>Quantity</h3>
+              <input
+                type="text"
+                class="input_edit"
+                id="edit_quantity"
+                placeholder="Add Quantity..."
+              />
+              <h3>Description</h3>
+              <input
+                type="text"
+                class="input_edit"
+                id="edit_description"
+                placeholder="Add Description..."
+              />
+              <br />
+              <button id="button_edit">ADD</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div id="details-footer">
+          <span>Tecnical Support</span>
+          <span id="phone" class="material-icons">phone</span>
+          <span>+1.555.555.5555</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
